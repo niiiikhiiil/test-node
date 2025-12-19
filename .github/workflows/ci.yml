@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [ main ]
   pull_request:
     branches: [ main ]
 
@@ -27,3 +27,6 @@ jobs:
     
     - name: Run lint
       run: npm run lint
+
+    - name: Build dokcer image
+      run: docker build -t node-test:v1 .
