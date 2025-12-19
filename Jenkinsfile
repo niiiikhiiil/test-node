@@ -2,7 +2,7 @@ pipeline {
     agent any
     tools {
         // Use the EXACT name configured in Global Tool Configuration
-        nodejs 'NodeJS25' 
+        nodejs 'NODEJS25' 
     }
     stages {
         stage('Install Dependencies and Run Tests') {
